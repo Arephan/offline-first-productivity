@@ -1,0 +1,17 @@
+{
+  "name": "offline-first-productivity",
+  "version": "1.0.0",
+  "description": "Offline-first productivity app - notes + tasks with optional cloud sync",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["offline-first", "productivity", "notes", "tasks", "local-first"],
+  "author": "Arephan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
