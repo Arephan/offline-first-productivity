@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✅ Offline-First Productivity - Interactive Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0066ff;
+            --accent: #ff4444;
+            --bg: #0a0e27;
+            --card: #1a1f3a;
+            --text: #ffffff;
+            --text-secondary: #a0a0c0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, var(--bg) 0%, #1a1f3a 100%);
+            color: var(--text);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .demo-section {
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .demo-section h2 {
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        .demo-btn {
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .demo-btn:hover {
+            transform: translateY(-2px);
+        }
+        .demo-btn.secondary {
+            background: rgba(0, 102, 255, 0.2);
+            border: 1px solid var(--primary);
+        }
+        .features {
+            background: rgba(0, 102, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .features h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .features ul {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+        .features li:before {
+            content: "⚡ ";
+            margin-right: 0.5rem;
+        }
+        .features li {
+            margin-bottom: 0.5rem;
+        }
+        .cta {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 102, 255, 0.1);
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .cta a:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>✅ Offline-First Productivity</h1>
+            <p>Tasks + notes with 100% offline localStorage. Subscription fatigue solver.</p>
+        </div>
+
+        
+      <div class="demo-section">
+        <h2>🎯 Your Tasks & Notes</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+          <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+            <h3 style="color: #0066ff; margin-bottom: 1rem;">✅ Tasks</h3>
+            <div style="font-size: 0.9rem;">
+              <div style="padding: 0.6rem; background: rgba(74,222,128,0.1); border-radius: 4px; margin-bottom: 0.5rem;">
+                <input type="checkbox" checked> Finish project proposal
+              </div>
+              <div style="padding: 0.6rem; margin-bottom: 0.5rem;">
+                <input type="checkbox"> Review pull requests
+              </div>
+              <div style="padding: 0.6rem; margin-bottom: 0.5rem;">
+                <input type="checkbox"> Update documentation
+              </div>
+            </div>
+            <input type="text" placeholder="Add new task..." style="width: 100%; padding: 0.6rem; background: rgba(0,0,0,0.5); border: 1px solid rgba(0,102,255,0.3); border-radius: 4px; color: white; margin-top: 1rem;">
+          </div>
+          <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+            <h3 style="color: #ff4444; margin-bottom: 1rem;">📝 Notes</h3>
+            <textarea placeholder="Write your thoughts here..." style="width: 100%; height: 150px; padding: 1rem; background: rgba(0,0,0,0.5); border: 1px solid rgba(0,102,255,0.3); border-radius: 4px; color: white; resize: none;"></textarea>
+            <div style="font-size: 0.8rem; color: #a0a0c0; margin-top: 0.5rem;">💾 Auto-saved • 🔒 100% offline</div>
+          </div>
+        </div>
+      </div>
+    
+
+        <div class="features">
+            <h3>✨ Features</h3>
+            <ul>
+                <li>100% offline (localStorage)</li><li>Tasks with completion tracking</li><li>Notes with timestamps</li><li>Real-time stats</li>
+            </ul>
+        </div>
+
+        <div class="cta">
+            <h3 style="margin-bottom: 1rem;">🚀 Ready to Use?</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Clone from GitHub and deploy in seconds</p>
+            <a href="https://github.com/Arephan" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
